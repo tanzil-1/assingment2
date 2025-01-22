@@ -177,6 +177,22 @@
 
 /* Standard Curriculum Styles */
 
+.curriculum{
+  background-image: url(/assets/bg.png);
+  text-align: center;
+}
+
+.curriculum-card-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+  gap:28px;
+}
+
+.curriculum-card-container .curriculum-cards{
+  border: 1px solid black;
+  border-radius: 18.86px;
+}
 
 
 
