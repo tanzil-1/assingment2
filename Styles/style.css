@@ -180,20 +180,101 @@
 .curriculum{
   background-image: url(/assets/bg.png);
   text-align: center;
+  padding: 60px 140px;
+}
+
+.curriculum-heading{
+  font-size: 46px;
+  margin-bottom: 80px;
 }
 
 .curriculum-card-container{
   display: grid;
   grid-template-columns: repeat(3,1fr);
+  margin-bottom: 80px;
 
   gap:28px;
 }
 
 .curriculum-card-container .curriculum-cards{
-  border: 1px solid black;
-  border-radius: 18.86px;
+  padding:13%;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.gradient-blue{
+  border: 1px solid #64c9f1;
+  border-radius: 18.86px;
+  background-image: linear-gradient(to bottom,#64c9f183,rgb(255, 255, 255));
+  box-shadow: 5px 5px 5px rgba(173, 216, 230, 0.375);
+}
+
+.gradient-orange{
+  border: 1px solid #f7db95;
+  border-radius: 18.86px;
+  background-image: linear-gradient(to bottom,#f7db9590,white);
+  box-shadow: 5px 5px 5px #f7db954a;
+}
+
+.gradient-purple{
+  border: 1px solid #CA92FF;
+  border-radius: 18.86px;
+  background-image: linear-gradient(to bottom,#ca92ff8b, white);
+  box-shadow: 5px 5px 5px #ca92ff3c;
+
+}
+.curriculum-img{
+  width: 50%;
+  margin-bottom: 32px;
+
+  
+}
+ .curriculum-card-heading{
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.curriculum-card-description{
+  color:#808080;
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+.read-more-1{
+  font-size: 15px;
+text-decoration: none;
+color:#64C8FF;
+ }
+
+ .read-more-2{
+  font-size:15px;
+  text-decoration: none;
+  color:#F0AA00;
+   }
+
+   .read-more-3{
+    font-size: 15px;
+    text-decoration: none;
+    color:#8700FF;
+     }
+
+     .arrow-btn {
+      background-color: #FEA301;
+      border:none;
+      border-radius:50%;
+      padding:25px;
+     }
+
+     .arrow-btn:hover{
+      background-color: #9c6404;
+     }
+
+     .fa-angle-left,.fa-angle-right{
+      color:white;
+      font-size: 25px;
+     }
 
 
   /* navigation responsiveness */
@@ -209,8 +290,9 @@
       display: none; 
     }
 
-    .fa-solid{
+    .fa-bars{
         font-size: 30px;
+
     }
 
     .container i{
@@ -272,7 +354,29 @@
       padding: 6px 24px;
     }
 
+  }
 
-    
+  /* Curriculum Responsiveness */
 
+  @media  screen and (max-width: 576px) {
+    .arrow-btn{
+      display: none;
+    }
+
+    .curriculum{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 70px 16.5px 20px;
+    }
+
+    .curriculum-card-container{
+      display:flex;
+      flex-direction: column;
+      
+    }
+    .curriculum-heading{
+      font-size: 28px;
+    }
   }
