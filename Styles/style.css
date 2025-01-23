@@ -179,7 +179,7 @@
 /* Standard Curriculum Styles */
 
 .curriculum{
-  background-image: url(assets/bg.png);
+  background-image: url("assets/bg.png");
   text-align: center;
   padding: 60px 140px;
 }
@@ -283,8 +283,8 @@ color:#64C8FF;
      .our-stories{
       text-align: center;
       background: #eb01a52c;
-      background-image: url(assets/bg.png);
-      background-image: url(assets/bg.png), linear-gradient(to top,#fea10150, #ffffff);
+      background-image: url("assets/bg.png");
+      background-image: url("assets/bg.png"), linear-gradient(to top,#fea10150, #ffffff);
       padding: 60px 140px;
     }
     .our-stories h2 {
